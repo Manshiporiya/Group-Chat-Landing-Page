@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Meet landing page</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+         
+            "cyan-600": '#4D96A9',
+            "cyan-300": "#8FE3F9",
+         
+            "purple-600": "#855FB1",
+            "purple-300": "#D9B8FF",
+            
+            "slate-900": "#28283D",
+            "slate-600": "#87879D",
+            "slate-300": "#D1D1DF",
+    
+            "white": "#FAFAFA",
+          },
+          fontFamily: {
+            "red-hat-display": ["Red Hat Display", "sans-serif"],
+          },
+          fontSize: {
+           
+            "6xl": ["64px", {
+              lineHeight: "110%",
+              fontWeight: "900",
+            }],
+         
+            "4xl": ["40px", {
+              lineHeight: "110%",
+              fontWeight: "900",
+            }],
+         
+            "lg": ["18px", {
+              lineHeight: "110%",
+              fontWeight: "500",
+            }],
+         
+            "base": ["16px"]
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body class="font-red-hat-display flex flex-col bg-white">
+
+  <header class="flex justify-center items-stretch">
+    <img src="assets/logo.svg" alt="meet logo" class="pt-12 lg:pt-20 self-stretch" />
+  </header>
+
+  <main class="flex flex-col justify-center">
+
+    <div class="pt-16 lg:pt-0 overflow-hidden flex justify-center items-stretch pb-12 md:pb-[72px] lg:pb-20">
+     
+      <img src="assets/tablet/image-hero.png" alt="avatar icons of different individuals" class="max-w-[433.003px] md:max-w-4xl self-stretch lg:hidden" />
+    </div>
+
+    <div class="lg:flex justify-between items-center overflow-hidden lg:pb-16">
+    
+      <div class="flex hidden lg:block -ml-7 ">
+        <img src="assets/desktop/image-hero-left.png" alt="avatar images of indivuals" />
+      </div>
+
+      <div class="flex justify-center px-8 pb-8 md:pb-16 lg:pb-0">
+        <div class="max-w-[305px] md:max-w-md space-y-6">
+          <h1 class="text-slate-900 text-4xl md:text-[48px] lg:text-6xl text-center">Group Chat <br /> for Everyone</h1>
+          <p class="text-base font-medium lg:text-lg text-slate-600 text-center leading-[24px] lg:leading-[27px]">
+            Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+          </p>
+          <div class="flex flex-col md:flex-row justify-center items-center gap-y-4 md:gap-[17px]">
+            <button class="rounded-full bg-cyan-600 hover:bg-[#71C0D4] text-white text-base font-black px-10 py-4 leading-[1.5rem]">
+              Download <span class="text-cyan-300">v1.3</span>
+            </button>
+            <button class="rounded-full bg-purple-600 hover:bg-[#B18BDD] text-white text-base font-black px-10 py-4 leading-[1.5rem]">
+              What is it?
+            </button>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="flex hidden lg:block -mr-7 ">
+        <img src="assets/desktop/image-hero-right.png" alt="avatar images of individuals" />
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-center items-center self-center px-8 lg:px-20 pt-8 md:pt-14 max-w-[1120px] lg:max-w-screen-xl pb-16">
+      <div class="flex flex-col divide-y divide-slate-300 h-20 w-px bg-slate-300"></div>
+
+      <div class="flex justify-center items-center border rounded-full border-slate-300 size-14">
+        <p class="text-base font-black leading-[1.5rem] text-slate-600">01</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8 py-16 md:max-w-2xl lg:max-w-6xl">
+        <img src="assets/desktop/image-woman-in-videocall.jpg" alt="woman in videocall" class="rounded-lg" />
+        <img src="assets/desktop/image-women-videochatting.jpg" alt="women videochatting" class="rounded-lg" />
+        <img src="assets/desktop/image-men-in-meeting.jpg" alt="men in meeting" class="rounded-lg" />
+        <img src="assets/desktop/image-man-texting.jpg" alt="man texting" class="rounded-lg" />
+      </div>
+
+      <div class="flex flex-col items-center text-center max-w-[504px] lg:max-w-[544px]">
+        <p class="text-xs md:text-sm lg:text-base font-black uppercase leading-[1.1rem] tracking-[4px] text-cyan-600 pb-4">
+          Built for modern use
+        </p>
+
+        <h2 class="text-4xl text-[32px] md:text-[36px] lg:text-4xl text-slate-900 pb-8 md:max-w-md">
+          Smarter meetings, all in one place
+        </h2>
+
+        <p class="text-base lg:text-lg font-medium text-slate-600 leading-[1.5em] md:leading-[24px] lg:leading-[27px]">
+          Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="flex flex-col items-center relative overflow-hidden">
+    <div class="flex flex-col divide-y divide-slate-300 h-20 w-px bg-slate-300"></div>
+
+    <div class="flex justify-center items-center border rounded-full border-slate-300 size-14 z-20 relative bg-white">
+      <p class="text-base font-black leading-[1.5rem] text-slate-600">02</p>
+    </div>
+
+    <div class="relative w-full -mt-8 flex justify-center items-center">
+
+      <div class="relative w-full h-full md:hidden">
+        <img src="assets/mobile/image-footer.jpg" alt="woman with headphones" class="object-bottom w-full h-full" />
+        <div class="absolute inset-0 bg-cyan-600 opacity-90"></div>
+      </div>
+
+   
+      <div class="relative w-full hidden md:block lg:hidden">
+        <img src="assets/tablet/image-footer.jpg" alt="woman with headphones" class="object-cover w-full max-h-[320px]" />
+        <div class="absolute inset-0 bg-cyan-600 opacity-90"></div>
+      </div>
+
+      <div class="relative w-full hidden lg:block">
+        <img src="assets/desktop/image-footer.jpg" alt="woman with headphones" class="object-cover w-full max-h-[312px]" />
+        <div class="absolute inset-0 bg-cyan-600 opacity-90"></div>
+      </div>
+
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-center lg:text-start mx-auto z-20 max-w-[504px] md:max-w-screen-sm lg:max-w-6xl px-8 py-16 lg:py-28">
+        <div class="lg:flex lg:max-w-full space-y-6 lg:space-y-0 lg:gap-x-8 justify-start items-start mx-auto">
+          <h2 class="text-white text-4xl text-[32px] md:text-[36px] lg:text-4xl lg:max-w-[455px]">
+            Experience more together
+          </h2>
+          <p class="text-white text-base font-medium lg:text-lg leading-[1.5rem] lg:leading-[27px] max-w-[450px]">
+            Stay connected with reliable, high-quality meetings powered by the latest technology.
+          </p>
+        </div>
+        <button class="rounded-full bg-purple-600 hover:bg-[#B18BDD] text-white text-base font-black px-10 py-4 mt-6 lg:mt-0">
+          Download v1.3
+        </button>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
